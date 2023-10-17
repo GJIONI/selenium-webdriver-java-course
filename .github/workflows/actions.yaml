@@ -1,3 +1,5 @@
+# the code below is sudo code/command line code/linux code
+
 # Event name (the Event that triggers the Job to run and since each push will trigger the Job to run we named it respectively)
 name: on_push
 
@@ -12,7 +14,27 @@ jobs:
   build_and_test:
     runs-on: ubuntu-latest
 
+    # declare environments that the Tests will run
+    env:
+      RUNNER_OS: true
+      HEADLESS_CHROME: true
+
     steps:
       - uses: actions/checkout@v2
+
+      # Thinks we need to do to Run our Tests using the GitHub Actions
+      # install java because we need java to run our Tests
+      - uses: actions/setup-java@v2
+        with:
+          distribution: 'zulu'
+          java-version: 16
+
+      # Run maven(mvn) Tests
+      - name: Run Tests with maven
+        # declare the directory that contains maven (pom.xml file), here is webdriver_java
+        working-directory: webdriver_java
+        run: mvn test
+
+         # Handle Remote ChromeDriver
 
 # What are the steps within each Job
