@@ -5,7 +5,7 @@ name: on_push
 on:
   push:
     branch:
-      -"**"
+      - "**"
 # What Jobs to Execute (below we define a collection os jobs-our job name contains 2 spaces)
 jobs:
 
@@ -13,6 +13,6 @@ jobs:
     runs_on: ubuntu-latest
 
     steps:
-      -uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
 # What are the steps within each Job
