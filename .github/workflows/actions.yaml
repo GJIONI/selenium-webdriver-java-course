@@ -1,0 +1,18 @@
+# Event name (the Event that triggers the Job to run and since each push will trigger the Job to run we named it respectively)
+name: on_push
+
+# When the Event should Run (each time a push is performed on any (all branches: "**") of the branches)
+on:
+  push:
+    branch:
+      -"**"
+# What Jobs to Execute (below we define a collection os jobs-our job name contains 2 spaces)
+jobs:
+
+  build_and_test:
+    runs_on: ubuntu-latest
+
+    steps:
+      -uses: actions/checkout@v2
+
+# What are the steps within each Job
