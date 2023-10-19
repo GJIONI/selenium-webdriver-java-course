@@ -20,6 +20,9 @@ jobs:
       HEADLESS_CHROME: true
 
     steps:
+       # Set a Start Time
+      - name: Set Start Time
+        run: echo "START_TIME=$(date +%s)" >> $GITHUB_ENV
       - uses: actions/checkout@v2
 
       # Thinks we need to do to Run our Tests using the GitHub Actions
@@ -35,6 +38,10 @@ jobs:
         working-directory: webdriver_java
         run: mvn test
 
+      # Calculate Total Duration
+      - name: Collect Build Data
+        run: expr $(date +%s) - $(START_TIME)
+        # Make sure to run even if previous step fails
          # Handle Remote ChromeDriver
 
 # What are the steps within each Job
