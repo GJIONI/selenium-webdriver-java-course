@@ -40,7 +40,14 @@ jobs:
 
       # Calculate Total Duration
       - name: Collect Build Data
-        run: expr $(date +%s) - $(START_TIME)
+        working-directory: webdriver_java
+        if: always()
+        # create a multiline run command using the pipe "|", which it tells yaml that the
+        # code below is part of the same command
+        run: |
+          echo "TOTAL_DURATION=$(expr $(date +%s) - ${START_TIME})"
+          ./resources/test_result_script.sh
+          # Run the script to extract test results
         # Make sure to run even if previous step fails
          # Handle Remote ChromeDriver
 
