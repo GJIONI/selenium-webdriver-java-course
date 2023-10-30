@@ -1,6 +1,6 @@
 package suite1.javascript;
 
-import base.BaseTests;
+import suite1.base.BaseTests;
 import org.testng.annotations.Test;
 
 public class JavaScriptTests extends BaseTests {

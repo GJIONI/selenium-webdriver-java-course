@@ -1,4 +1,4 @@
-package base;
+package suite1.base;
 
 import com.google.common.io.Files;
 import org.openqa.selenium.*;

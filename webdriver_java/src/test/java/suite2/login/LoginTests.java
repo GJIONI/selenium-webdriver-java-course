@@ -1,6 +1,6 @@
 package suite2.login;
 
-import base.BaseTests;
+import suite1.base.BaseTests;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 import pages.SecureAreaPage;

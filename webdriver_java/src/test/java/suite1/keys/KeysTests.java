@@ -1,6 +1,6 @@
 package suite1.keys;
 
-import base.BaseTests;
+import suite1.base.BaseTests;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 

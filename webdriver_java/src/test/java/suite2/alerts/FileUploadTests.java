@@ -1,6 +1,6 @@
 package suite2.alerts;
 
-import base.BaseTests;
+import suite1.base.BaseTests;
 import org.testng.annotations.Test;
 
 import java.nio.file.Paths;

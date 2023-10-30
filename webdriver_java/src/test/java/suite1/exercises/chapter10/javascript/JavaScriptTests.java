@@ -1,6 +1,6 @@
 package suite1.exercises.chapter10.javascript;
 
-import base.BaseTests;
+import suite1.base.BaseTests;
 import org.testng.annotations.Test;
 
 import java.util.List;

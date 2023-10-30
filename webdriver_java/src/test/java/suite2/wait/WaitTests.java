@@ -1,6 +1,6 @@
 package suite2.wait;
 
-import base.BaseTests;
+import suite1.base.BaseTests;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;

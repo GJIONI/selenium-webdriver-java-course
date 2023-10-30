@@ -1,6 +1,6 @@
 package suite1.exercises.chapter14.cookies;
 
-import base.BaseTests;
+import suite1.base.BaseTests;
 import org.openqa.selenium.Cookie;
 import org.testng.annotations.Test;
 

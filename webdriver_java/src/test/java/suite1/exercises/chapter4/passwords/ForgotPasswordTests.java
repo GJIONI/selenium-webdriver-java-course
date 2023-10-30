@@ -1,6 +1,6 @@
 package suite1.exercises.chapter4.passwords;
 
-import base.BaseTests;
+import suite1.base.BaseTests;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
