@@ -1,4 +1,4 @@
-package javascript;
+package suite1.javascript;
 
 import base.BaseTests;
 import org.testng.annotations.Test;

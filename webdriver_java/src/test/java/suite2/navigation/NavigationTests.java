@@ -1,4 +1,4 @@
-package navigation;
+package suite2.navigation;
 
 import base.BaseTests;
 import org.testng.annotations.Test;

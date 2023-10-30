@@ -1,4 +1,4 @@
-package hover;
+package suite1.hover;
 
 import base.BaseTests;
 import org.testng.annotations.Test;

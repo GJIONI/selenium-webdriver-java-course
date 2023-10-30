@@ -1,4 +1,4 @@
-package login;
+package suite2.login;
 
 import base.BaseTests;
 import org.testng.annotations.Test;
