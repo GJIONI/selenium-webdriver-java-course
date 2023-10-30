@@ -2,6 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -56,7 +57,10 @@ public class OpenCartTests {
                 driver = new ChromeDriver();
                 driver.manage().window().maximize();
             }
-
+            else if(browser.equalsIgnoreCase("firefox")) {
+                driver = new FirefoxDriver();
+                driver.manage().window().maximize();
+            }
             else {
                 System.out.println("Invalid option Selected hence defaulting to Chrome");
                 browser = "Chrome";
