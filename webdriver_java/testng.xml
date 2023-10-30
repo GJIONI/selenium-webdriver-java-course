@@ -1,7 +1,7 @@
 <!-- TestNG XML Configuration -->
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" verbose="1" name="Parallel Test Suite" annotations="JDK" parallel="tests">
-    <test name="Parallel Test Execution" parallel="tests">
+    <test name="suite one">
         <!-- Test Suite 1 -->
         <classes>
             <class name="suite1.hover.HoverTests" />
@@ -10,7 +10,7 @@
 
     </test>
 
-    <test name="Parallet Test Execution" parallel="tests">
+    <test name="suite two">
         <!-- Test Suite 2 -->
         <classes>
             <class name="suite2.login.LoginTests" />
